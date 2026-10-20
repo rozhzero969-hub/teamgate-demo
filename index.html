@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TeamGate — Employee Portal Demo</title>
+  <meta name="description" content="Employee portal prototype. Demo — sample data only.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <button type="button" class="skip-link" data-action="skip-to-main">Skip to main content</button>
+
+  <div id="app" aria-busy="true">
+    <div class="demo-banner"><strong>Demo — sample data only</strong></div>
+    <p class="loading">Loading the demo…</p>
+  </div>
+
+  <!-- Screen-reader announcements for save results and validation errors -->
+  <div id="live-polite" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="live-assertive" class="visually-hidden" role="alert" aria-atomic="true"></div>
+
+  <!-- Visual-only toasts (the live regions above carry the same message) -->
+  <div id="toast-region" class="toast-region" aria-hidden="true"></div>
+
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+
+  <noscript>
+    <div class="demo-banner"><strong>Demo — sample data only</strong></div>
+    <p class="loading">This prototype needs JavaScript enabled in your browser.</p>
+  </noscript>
+
+  <script src="js/util.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
